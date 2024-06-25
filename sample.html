@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Invoice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>body {
+    font-family: Arial, sans-serif;
+}
+
+.invoice-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #000;
+}
+
+h1 {
+    text-align: center;
+    color: #011f63;
+}
+
+p {
+    text-align: center;
+    margin: 5px 0;
+}
+
+.gst-info {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.table-bordered {
+    border: 1px solid #000;
+}
+
+.table-bordered th, .table-bordered td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+}
+
+.invoice-no {
+    width: 30%;
+}
+
+.title {
+    width: 40%;
+    text-align: center;
+    font-weight: bold;
+    color: #011f63;
+}
+
+.date {
+    width: 30%;
+    text-align: right;
+}
+
+.totals {
+    margin-top: 20px;
+}
+
+.amounts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.amounts div {
+    width: 48%;
+    border-top: 1px solid #000;
+    padding-top: 10px;
+}
+</style>
+<body>
+    <div class="invoice-container">
+        <h1>KRK SILVERS</h1>
+        <p>88-1, VASAGASALAI STREET, Salem-636 001.</p>
+        <p>Mobile: 97906 69432, 94874 10094.</p>
+        
+        <div class="gst-info">
+            <div>GSTIN: 33 AUVPR9731J 1ZS</div>
+            <div>State: Tamilnadu</div>
+            <div>Code: 33</div>
+        </div>
+        
+        <table class="table table-bordered">
+            <tr>
+                <td class="invoice-no">Invoice No: 19/24-25</td>
+                <td class="title">TAX INVOICE</td>
+                <td class="date">Date: 25/06/2024</td>
+            </tr>
+            <tr>
+                <td>To</td>
+                <td colspan="2">Transport Mode :</td>
+            </tr>
+            <tr>
+                <td>M/s. Bhanu Silver House,<br>Ongole.</td>
+                <td colspan="2">Vehicle Number :</td>
+            </tr>
+            <tr>
+                <td>Date of Supply :</td>
+                <td colspan="2">State : AP Code : 37 Place of Supply :</td>
+            </tr>
+            <tr>
+                <td>GSTIN : 37AJZPP8797M2ZH</td>
+                <td colspan="2"></td>
+            </tr>
+        </table>
+        
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Sl.No.</th>
+                    <th>DESCRIPTION OF ITEMS</th>
+                    <th>HSN CODE</th>
+                    <th>Weight Kg.gms</th>
+                    <th>Labour Rate Per Kilo</th>
+                    <th>Amount Rs.</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Leg Chain</td>
+                    <td>7113</td>
+                    <td>24.010</td>
+                    <td>52,710</td>
+                    <td>1,265,567.10</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+        
+        <div class="totals">
+            <p>Total Amount in Words:</p>
+            <p>Twelve Lakh Sixty Five Thousand Five Hundred And Sixty Seven Only.</p>
+            
+            <div class="amounts">
+                <div>Total Amount Before Tax: 1,265,567.10</div>
+                <div>Add : CGST @ 1.5% :</div>
+                <div>Add : SGST @ 1.5% :</div>
+                <div>Add : IGST @ 3.0% : 37,967.01</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
