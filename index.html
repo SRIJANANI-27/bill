@@ -10,61 +10,136 @@
     <script src="script.js"></script>
 </head>
 <body>
+
     <div class="container-fluid">
-        <section class="upper">
-            <h1 style="color: darkblue;">KRK SILVERS</h1>
-            <p class="address">88-1, VASAGASALAI STREET, Salem-636 001. <br>
-            Mobile: 97906 69432, 94874 10094</p>
-        </section>
+        <div class="main">
+            <button type="button" onclick="printForm()" class="btn btn-outline-primary" style="margin-left: 10px;margin-top: 10px;">Print</button>
 
-        <section class="box">
-            <div class="frst">GSTIN :</div>
-            <div class="frst ad">33 AUVPR9731J 1ZS</div>
-            <div class="frst">State : </div>
-            <div class="frst ad">Tamilnadu</div>
-            <div class="frst">Code :</div>
-            <div class="frst ad">33</div>
-        </section>
-        <br>
-        <div class="table-responsive">
-        <table class=" table table-bordered frsttable">
-            <tr>
-                <td class="no">INVOICE NO : <input type="text" id="invoiceno"></td>
-                <td class="title" style="color: #011f63;">TAX INVOICE</td>
-                <td class="date" >Date : <input type="date"></td>
-            </tr>
-            <tr class="second">
-                <td >TO</td>
-                <td colspan="2">Transport Mode :</td>
-            </tr>
-            <tr>
-                <td ><input type="text" class="input"></td>
-                <td colspan="2">Vehicle Number :</td>
+            <section class="upper">
+                <h1 style="color: darkblue;">KRK SILVERS</h1>
+                <p class="address">88-1, VASAGASALAI STREET, Salem-636 001. <br>
+                Mobile: 97906 69432, 94874 10094</p>
+            </section>
 
-            </tr>
-            <tr>
-                <td ><input type="text" class="input"></td>
-                <td colspan="2">Date of Supply : </td>
+            <section class="box">
+                <div class="frst">GSTIN :</div>
+                <div class="frst ad">33 AUVPR9731J 1ZS</div>
+                <div class="frst">State : </div>
+                <div class="frst ad">Tamilnadu</div>
+                <div class="frst">Code :</div>
+                <div class="frst ad">33</div>
+            </section>
+            <br>
 
-            </tr>
-            <tr>
-                <div class="flex">
-                <td>State : <input type="text" id="inp1"> 
-                <span style="position: relative;right: -40px;">Code : <input type="text" id="inp1"></span></td>
-                </div>
-                <td colspan="2">Place of Supply :</td>
-            </tr>
-            <tr>
-                <td>GSTIN : </td>
-                <td colspan="2"><input type="text"></td>
-            </tr>
-        </table>
+            <div class="table-responsive" width="100%">
+                <table class="table table-bordered frsttable">
+                    <tr class="header-row">
+                        <td colspan="6">
+                            <div class="row">
+                                <div class="col-12 col-sm-4 d-flex align-items-center">
+                                    <label for="invoiceno" class="mr-2 mb-0">Invoice No :</label>
+                                    <input type="text" id="invoiceno" class="form-control">
+                                </div>
+                            
+                                <div class="col-12 col-sm-4 text-center">
+                                    <strong class="title">TAX INVOICE</strong>
+                                </div>
+                                <div class="col-12 col-sm-4 text-right d-flex align-items-center">
+                                    Date: <input type="date" class="form-control" id="invoicedate">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="second">
+                        <td style="width: 49.33%;" colspan="3">TO</td>
+                        <td style="width: 50.67%;" colspan="3">
+                            <div class="flex-container d-flex align-items-center">
+                                <span class="mt-2">Transport Mode :</span>
+                                <input type="text" class="form-control" id="placeofsupply">
 
-        
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 33.33%;" colspan="3"><input type="text" class="form-control"></td>
+                        <td style="width: 33.33%;" colspan="3">
+                            <div class="flex-container d-flex align-items-center">
+                                <span class="mt-2">Vehicle Number :</span>
+                                <input type="text" class="form-control" id="placeofsupply">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 33.33%;" colspan="3"><input type="text" class="form-control"></td>
+                        <td style="width: 66.67%;" colspan="3">
+                            <div class=" d-flex align-items-center">
+                                <span for="floatingInputGrid" class="mt-2">Date of Supply :</span>
+                                <input type="date" class="form-control" id="placeofsupply">
+                              </div>
+                        </td>
+                       
+                    </tr>
+                    <tr>
+                        <td class="state-code" style="width: 33.33%;" colspan="3">
+                            <div class="d-flex">
+                                <label for="state" class="mt-2">State:</label>
+                                <input type="text" id="state" class="form-control input-state">
+                                <label for="code"  class="mt-2">Code:</label>
+                                <input type="text" id="code" class="form-control input-code">
+                            </div>
+                        </td>
+                        <td style="width: 66.67%;" colspan="3">
+                            <div class=" d-flex align-items-center">
+                                <span for="floatingInputGrid" class="mt-2">Place of Supply :</span>
+                                <input type="text" class="form-control" id="placeofsupply">
+                              </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 33.33%;" colspan="3">
+                            <div class="d-flex align-items-center">
+                                <label for="gstin">GSTIN:</label>
+                                <input type="text" id="gstin" class="form-control">
+                            </div>
+                        </td>
+                        <td style="width: 66.67%;" colspan="3"></td>
+                    </tr>
+                    <tr class="head">
+                        <td style="width: 10%;" >Sl.No.</td>
+                        <td style="width: 20%;" >DESCRIPTION OF ITEMS</td>
+                        <td style="width: 20%;" >HSN Code</td>
+                        <td style="width: 10%;" >Weight Kg.gms</td>
+                        <td style="width: 20%;" >Labour Rate <br> Per Kilo</td>
+                        <td style="width: 20%;" >Amount <br> Rs</td>
+                    </tr>
+                    <tr class="no-top-border">
+                        <td><input type="text" class="form-control"></td>
+                        <td><input type="text" class="form-control"></td>
+                        <td><input type="text" class="form-control"></td>
+                        <td><input type="text" class="form-control weight-input"></td>
+                        <td><input type="text" class="form-control labour-rate-input"></td>
+                        <td><input type="text" class="form-control amount-output"></td>
+                    </tr>
+                    <tr >
+                        <td><input type="text" class="form-control"></td>
+                        <td><input type="text" class="form-control"></td>
+                        <td><input type="text" class="form-control"></td>
+                        <td><input type="text" class="form-control weight-input"></td>
+                        <td><input type="text" class="form-control labour-rate-input"></td>
+                        <td><input type="text" class="form-control amount-output"></td>
+                    </tr>
+                    <tr >
+                        <td><input type="text" class="form-control"></td>
+                        <td><input type="text" class="form-control"></td>
+                        <td><input type="text" class="form-control"></td>
+                        <td><input type="text" class="form-control weight-input"></td>
+                        <td><input type="text" class="form-control labour-rate-input"></td>
+                        <td><input type="text" class="form-control amount-output"></td>
+                    </tr>
+                    
+                </table>
+            </div>
         </div>
-
-
     </div>
-    <button type="button" onclick="printForm()" class="btn btn-outline-primary" style="margin-left: 10px;">Print</button>
 </body>
 </html>

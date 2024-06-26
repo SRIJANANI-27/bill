@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-    padding-top: 50px;
+    padding-top: 10px;
     text-align: center;
 }
 
@@ -33,6 +33,7 @@ h1 {
 
 .box {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -40,17 +41,85 @@ h1 {
     background-color: white;
     color: rgba(64,146,204,255);
 }
+.main{
+  border: 4px double black;
+  margin: 10px 20px;
+}
+#invoiceno, .date{
+  margin-left: 10px;
+  width: 150px;
+}
 
+.title {
+  text-decoration: underline;
+  font-weight: 700;
+ /* position: relative;
+ right: 80px; */
+  border-right: none;
+  font-size: 20px;
+  color: darkblue !important;
+  
+}
+
+textarea{
+  border: none  !important;
+  outline: none !important;
+  width: 45% !important;
+  margin-left: 10px !important;
+  overflow-y: hidden;
+}
+.table-responsive{
+  width: 100%;
+  padding: 20px;
+  
+}
+#floatingInputGrid{
+  width: 40%;
+  margin-left: 20px;
+}
+input{
+  border: none !important;
+  outline: none !important;
+}
+.table tr td {
+  border: 1px solid black !important;
+  color: rgba(64,146,204,255);
+  font-weight: 500;
+
+}
+#placeofsupply{
+  width: 300px;
+}
+
+.head td{
+  background-color: rgba(128, 128, 128, 0.589) !important;
+  padding: 10px !important;
+  color: black !important;
+  text-align: center;
+  color: darkblue !important;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+
+table, th, td {
+  border: none;
+}
+.border{
+  border-top: none;
+}
+
+.table-bordered .border {
+  border-left: none; 
+}
 /* table */
-.frsttable {
+/* .frsttable {
     margin-top: 18px;
     width: 100%;
 }
-#invoiceno{
-    width: 55px;
-}
+
 .date input{
-    width: 120px;
+    width: 150px;
 }
 input{
     outline: none;
@@ -59,30 +128,31 @@ input{
 table tr td {
     color: #408ecc !important; 
     font-weight: 500;
+    
 }
 
   .title {
     text-decoration: underline;
     font-weight: 600;
    position: relative;
-   right: 40px;
+   right: 80px;
     border-right: none;
-    font-size: 22px;
+    font-size: 20px;
     color: darkblue !important;
     
 }
+
 .input{
     width: 300px;
 }
+
+
  .date {
     float: right;
 }
-#inp1{
-    width: 100px;
-}
 
 .table-bordered {
-    border: 1px solid #ddd; 
+    border: 1px solid black; 
     border-collapse: collapse; 
     width: 100%; 
   }
@@ -93,25 +163,33 @@ table tr td {
     border-left: none; 
   }
 
-  /* .second {
+  
+
+ 
+  
+  .flex-container {
     display: flex;
-    justify-content: space-between;
-    justify-content: space-evenly;
    
-  } */
-/* .table-bordered {
-    border: 1px solid #ddd; 
-    border-collapse: collapse; 
-    width: 100%; 
+}
+
+.input-state {
+    width: 60%;
+}
+
+.input-code {
+    width: 30%;
+    margin-left: 10px;
+}
+
+.main{
+  border: 4px double black;
+  margin: 3px;
+} */
+
+@media print {
+  h1 {
+    display: block !important; /* or any other appropriate display property */
   }
-  .table-bordered .no {
-    border-right: none; 
-  }
-  .table-bordered .title {
-    border-left: none; 
-  }
-  .table-bordered .date {
-    border-left: none; 
-  } */
-  
-  
+}
+
+
