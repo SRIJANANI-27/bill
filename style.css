@@ -140,7 +140,9 @@ tr.no-border {
   border-top: none !important;
 }
 
-
+.hidden {
+  border: none;
+}
 @media print {
   body {
       -webkit-print-color-adjust: exact;
