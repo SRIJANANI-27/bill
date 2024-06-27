@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KRK SILVERS</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </head>
+
 <body>
 
     <div class="container-fluid">
         <div class="main">
-            <button type="button" onclick="printForm()" class="btn btn-outline-primary" style="margin-left: 10px;margin-top: 10px;">Print</button>
+            <button type="button" onclick="printForm()" class="btn btn-outline-primary mt-2"
+                style="margin-left: 10px;">Print</button>
 
             <section class="upper">
                 <h1 style="color: darkblue;">KRK SILVERS</h1>
                 <p class="address">88-1, VASAGASALAI STREET, Salem-636 001. <br>
-                Mobile: 97906 69432, 94874 10094</p>
+                    Mobile: 97906 69432, 94874 10094</p>
             </section>
 
             <section class="box">
@@ -40,27 +46,28 @@
                                     <label for="invoiceno" class="mr-2 mb-0">Invoice No :</label>
                                     <input type="text" id="invoiceno" class="form-control">
                                 </div>
-                            
+
                                 <div class="col-12 col-sm-4 text-center">
                                     <strong class="title">TAX INVOICE</strong>
                                 </div>
-                                <div class="col-12 col-sm-4 text-right d-flex align-items-center">
-                                    Date: <input type="date" class="form-control" id="invoicedate">
+                                <div class="col-12 col-sm-4 d-flex align-items-center justify-content-end">
+                                    <label for="invoiceno">Date:</label>
+                                    <input type="date" id="invoiceno" class="form-control">
                                 </div>
                             </div>
                         </td>
                     </tr>
-                    <tr class="second">
-                        <td style="width: 49.33%;" colspan="3">TO</td>
-                        <td style="width: 50.67%;" colspan="3">
+                    <tr class="second" style="height: 1px;">
+                        <td style="width: 50%;" colspan="3">TO</td>
+                        <td style="width: 50%;" colspan="3">
                             <div class="flex-container d-flex align-items-center">
-                                <span class="mt-2">Transport Mode :</span>
+                                <span class="mt-2">Transport Mode:</span>
                                 <input type="text" class="form-control" id="placeofsupply">
 
                             </div>
                         </td>
                     </tr>
-                    <tr>
+                    <tr style="height: 1px;">
                         <td style="width: 33.33%;" colspan="3"><input type="text" class="form-control"></td>
                         <td style="width: 33.33%;" colspan="3">
                             <div class="flex-container d-flex align-items-center">
@@ -74,17 +81,17 @@
                         <td style="width: 66.67%;" colspan="3">
                             <div class=" d-flex align-items-center">
                                 <span for="floatingInputGrid" class="mt-2">Date of Supply :</span>
-                                <input type="date" class="form-control" id="placeofsupply">
-                              </div>
+                                <!-- <input type="date" class="form-control" id="placeofsupply "> -->
+                            </div>
                         </td>
-                       
+
                     </tr>
                     <tr>
                         <td class="state-code" style="width: 33.33%;" colspan="3">
                             <div class="d-flex">
                                 <label for="state" class="mt-2">State:</label>
                                 <input type="text" id="state" class="form-control input-state">
-                                <label for="code"  class="mt-2">Code:</label>
+                                <label for="code" class="mt-2">Code:</label>
                                 <input type="text" id="code" class="form-control input-code">
                             </div>
                         </td>
@@ -92,7 +99,7 @@
                             <div class=" d-flex align-items-center">
                                 <span for="floatingInputGrid" class="mt-2">Place of Supply :</span>
                                 <input type="text" class="form-control" id="placeofsupply">
-                              </div>
+                            </div>
                         </td>
                     </tr>
                     <tr>
@@ -105,14 +112,15 @@
                         <td style="width: 66.67%;" colspan="3"></td>
                     </tr>
                     <tr class="head">
-                        <td style="width: 10%;" >Sl.No.</td>
-                        <td style="width: 20%;" >DESCRIPTION OF ITEMS</td>
-                        <td style="width: 20%;" >HSN Code</td>
-                        <td style="width: 10%;" >Weight Kg.gms</td>
-                        <td style="width: 20%;" >Labour Rate <br> Per Kilo</td>
-                        <td style="width: 20%;" >Amount <br> Rs</td>
+                        <td style="width: 10%;">Sl.No.</td>
+                        <td style="width: 20%;">DESCRIPTION OF ITEMS</td>
+                        <td style="width: 20%;">HSN Code</td>
+
+                        <td style="width: 10%;">Labour Rate <br> Per Kilo</td>
+                        <td style="width: 20%;">Weight <br> Kg.gms</td>
+                        <td style="width: 30%;">Amount <br> Rs</td>
                     </tr>
-                    <tr class="no-top-border">
+                    <tr class="no-top-border" style="height: 1px;">
                         <td><input type="text" class="form-control"></td>
                         <td><input type="text" class="form-control"></td>
                         <td><input type="text" class="form-control"></td>
@@ -120,7 +128,7 @@
                         <td><input type="text" class="form-control labour-rate-input"></td>
                         <td><input type="text" class="form-control amount-output"></td>
                     </tr>
-                    <tr >
+                    <tr style="height: 1px;" class="no-top-border">
                         <td><input type="text" class="form-control"></td>
                         <td><input type="text" class="form-control"></td>
                         <td><input type="text" class="form-control"></td>
@@ -128,18 +136,76 @@
                         <td><input type="text" class="form-control labour-rate-input"></td>
                         <td><input type="text" class="form-control amount-output"></td>
                     </tr>
-                    <tr >
-                        <td><input type="text" class="form-control"></td>
-                        <td><input type="text" class="form-control"></td>
-                        <td><input type="text" class="form-control"></td>
-                        <td><input type="text" class="form-control weight-input"></td>
-                        <td><input type="text" class="form-control labour-rate-input"></td>
-                        <td><input type="text" class="form-control amount-output"></td>
+
+                    <tr>
+
+                        <td style="width: 33.33%;" colspan="3" rowspan="4">
+                            <h5 class="mt-4">Total Amount in Words:</h5>
+                            <h5 class="words"></h5>
+                        </td>
+                        <td style="width: 66.67%;" colspan="2">
+                            <div class=" d-flex align-items-center">
+                                <span>Total Amount Before Tax :</span>
+                            </div>
+                        </td>
+                        <td class="total">Amount</td>
                     </tr>
-                    
+                    <tr>
+                        <td style="width: 66.67%;" colspan="2" class="cgst">Add : CGST @ 1.5% :</td>
+                        <td class="valuecgst"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 66.67%;" colspan="2" class="sgst">Add : SGST @ 1.5% :</td>
+                        <td class="valuesgst"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 66.67%;" colspan="2" class="igst">Add : IGST @ 3.0% :</td>
+                        <td class="valueigst"></td>
+                    </tr>
+                    <tr class="bankdetail">
+                        <td style="width: 66.67%;" colspan="3" rowspan="6">
+                            <h4 style="color: darkblue;text-decoration: underline;text-align: center;font-weight: 700;">
+                                BANK DETAILS</h4>
+                            <pre>Bank Name           : Union Bank of India</pre>
+                            <pre>Branch Name        : Salem Town</pre>
+                            <pre>Account Number   : 050011100004076</pre>
+                            <pre>IFSC Code            : UNIB0900290</pre>
+                            <pre>Mode of Payment  : </pre>
+                            Subject to Salem Jurisdiction
+                        </td>
+
+                        <td style="width: 66.67%;" colspan="2" class="aftertax">Total Amount After Tax :</td>
+                        <td class="valuetax"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 66.67%; " colspan="2" class="roundoff">Round Off :</td>
+                        <td class="roundoffval"></td>
+                    </tr>
+                    <tr>
+                        <!-- <td style="width: 66.67%;" colspan="3"></td> -->
+                        <td style="width: 66.67%;color: darkblue;font-size: 19px;font-weight: 700;" colspan="2"
+                            class="grndtotal">Grand Total :</td>
+                        <td class="valuetotal"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 43.67%;color: darkblue;font-size: 19px;text-align: center;" colspan="3">For
+                            KRK SILVERS :</td>
+
+                    </tr>
+
+                    <tr style="border:2px solid white">
+                        <td colspan="3"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 33.67%; text-align: end;" colspan="3">Authorised Signatory</td>
+                    </tr>
+
+
+
                 </table>
             </div>
         </div>
     </div>
 </body>
+
 </html>

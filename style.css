@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-    padding-top: 10px;
+    /* padding-top: 10px; */
     text-align: center;
 }
 
@@ -18,9 +18,9 @@ h1 {
     color: blue;
 }
 
-.upper {
+/* .upper {
     line-height: 40px;
-}
+} */
 
 .frst {
     border: 1px solid black;
@@ -61,16 +61,16 @@ h1 {
   
 }
 
-textarea{
+/* textarea{
   border: none  !important;
   outline: none !important;
   width: 45% !important;
   margin-left: 10px !important;
   overflow-y: hidden;
-}
+} */
 .table-responsive{
   width: 100%;
-  padding: 20px;
+  padding: 10px;
   
 }
 #floatingInputGrid{
@@ -90,7 +90,11 @@ input{
 #placeofsupply{
   width: 300px;
 }
-
+.words{
+  text-indent: 60px;
+  text-transform: capitalize;
+  line-height: 32px;
+}
 .head td{
   background-color: rgba(128, 128, 128, 0.589) !important;
   padding: 10px !important;
@@ -100,11 +104,11 @@ input{
   font-weight: 800;
   font-size: 18px;
 }
-
-
-table, th, td {
-  border: none;
+.date input{
+  width: 130px;
 }
+
+
 .border{
   border-top: none;
 }
@@ -112,84 +116,107 @@ table, th, td {
 .table-bordered .border {
   border-left: none; 
 }
-/* table */
-/* .frsttable {
-    margin-top: 18px;
-    width: 100%;
+.table-bordered .borders {
+  border-bottom: none; 
+}
+.bankdetail pre{
+  color: rgba(0, 0, 139, 0.874);
+  text-align: justify;
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  /* text-align: justify; */
 }
 
-.date input{
-    width: 150px;
-}
-input{
-    outline: none;
-    border: none;
-}
-table tr td {
-    color: #408ecc !important; 
-    font-weight: 500;
-    
+/* Remove border from the bottom of the .borders tr */
+tr.borders {
+  border-bottom: none !important;
 }
 
-  .title {
-    text-decoration: underline;
-    font-weight: 600;
-   position: relative;
-   right: 80px;
-    border-right: none;
-    font-size: 20px;
-    color: darkblue !important;
-    
+/* Remove border from the top of the .no-border tr */
+tr.no-border {
+  border-top: none !important;
 }
 
-.input{
-    width: 300px;
-}
-
-
- .date {
-    float: right;
-}
-
-.table-bordered {
-    border: 1px solid black; 
-    border-collapse: collapse; 
-    width: 100%; 
-  }
-  .table-bordered .no {
-    border-right: none; 
-  }
-  .table-bordered .title {
-    border-left: none; 
-  }
-
-  
-
- 
-  
-  .flex-container {
-    display: flex;
-   
-}
-
-.input-state {
-    width: 60%;
-}
-
-.input-code {
-    width: 30%;
-    margin-left: 10px;
-}
-
-.main{
-  border: 4px double black;
-  margin: 3px;
-} */
 
 @media print {
-  h1 {
-    display: block !important; /* or any other appropriate display property */
+  body {
+      -webkit-print-color-adjust: exact;
   }
+  .container-fluid {
+      padding: 0;
+      margin: 0;
+  }
+  .main {
+      padding: 10px;
+      font-size: 12px;
+  }
+  .btn {
+    display: none !important;
+}
+  .upper h1 {
+      font-size: 18px;
+  }
+  .upper .address {
+      font-size: 12px;
+  }
+  .box .frst, .box .frst.ad {
+      font-size: 12px;
+  }
+  .table-responsive {
+      font-size: 12px;
+     width: 100%;
+     margin-right: 10px !important;
+  }
+  .btn {
+    display: none;
+}
+  .frsttable td, .frsttable input {
+      padding: 2px;
+  }
+  .header-row {
+      height: 40px;
+  }
+  .header-row label, .header-row strong, .header-row input {
+      font-size: 15px;
+  }
+  .second, .second input {
+      font-size: 10px;
+  }
+  .head {
+      font-size: 12px;
+  }
+  .no-top-border input {
+      font-size: 12px;
+  }
+  h5 {
+      font-size: 10px;
+      margin: 0;
+  }
+
+  .container-fluid {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.main {
+    padding: 10px !important;
+}
+.table-responsive {
+    overflow: visible !important;
+}
+.table {
+    width: 100% !important;
+}
+@page {
+  margin: 0;
+}
+.bankdetail pre{
+  font-size: 15px;
+  line-height: 10px;
+}
 }
 
 
