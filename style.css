@@ -45,29 +45,22 @@ h1 {
   border: 4px double black;
   margin: 10px 20px;
 }
-#invoiceno, .date{
+#invoiceno{
   margin-left: 10px;
-  width: 150px;
+  width: 120px;
 }
 
 .title {
   text-decoration: underline;
   font-weight: 700;
- /* position: relative;
- right: 80px; */
+ 
   border-right: none;
   font-size: 20px;
   color: darkblue !important;
   
 }
 
-/* textarea{
-  border: none  !important;
-  outline: none !important;
-  width: 45% !important;
-  margin-left: 10px !important;
-  overflow-y: hidden;
-} */
+
 .table-responsive{
   width: 100%;
   padding: 10px;
@@ -82,13 +75,13 @@ input{
   outline: none !important;
 }
 .table tr td {
-  border: 1px solid black !important;
+  border: 2px solid black !important;
   color: rgba(64,146,204,255);
   font-weight: 500;
 
 }
 #placeofsupply{
-  width: 300px;
+  width: 250px;
 }
 .words{
   text-indent: 60px;
@@ -105,7 +98,7 @@ input{
   font-size: 18px;
 }
 .date input{
-  width: 130px;
+  width: 140px;
 }
 
 
@@ -162,10 +155,10 @@ tr.no-border {
       font-size: 18px;
   }
   .upper .address {
-      font-size: 12px;
+      font-size: 13px;
   }
   .box .frst, .box .frst.ad {
-      font-size: 12px;
+      font-size: 13px;
   }
   .table-responsive {
       font-size: 12px;
@@ -182,10 +175,10 @@ tr.no-border {
       height: 40px;
   }
   .header-row label, .header-row strong, .header-row input {
-      font-size: 15px;
+      font-size: 13px;
   }
   .second, .second input {
-      font-size: 10px;
+      font-size: 12px;
   }
   .head {
       font-size: 12px;
@@ -194,7 +187,7 @@ tr.no-border {
       font-size: 12px;
   }
   h5 {
-      font-size: 10px;
+      font-size: 12px;
       margin: 0;
   }
 
@@ -216,8 +209,20 @@ tr.no-border {
   margin: 0;
 }
 .bankdetail pre{
-  font-size: 15px;
+  font-size: 13px;
   line-height: 10px;
+}
+.bankdetail h4{
+  font-size: 12px;
+}
+input{
+  font-size: 12px;
+}
+.date input{
+  width: 100px;
+}
+.words{
+  font-size: 15px;
 }
 }
 
