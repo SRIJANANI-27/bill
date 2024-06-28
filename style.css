@@ -105,7 +105,9 @@ input{
 .border{
   border-top: none;
 }
-
+.right{
+  text-align: right;
+}
 .table-bordered .border {
   border-left: none; 
 }
@@ -136,23 +138,34 @@ tr.no-border {
 .hidden {
   border: none;
 }
+.center-cell {
+  text-align: center !important;
+}
+/* .form-control {
+  text-align: center;
+} */
+.right{
+  text-align:end;
+}
 @media print {
   body {
       -webkit-print-color-adjust: exact;
+      font-size: 13px;
   }
   .container-fluid {
       padding: 0;
       margin: 0;
+      width: 100% !important;
   }
   .main {
       padding: 10px;
-      font-size: 12px;
+      font-size: 13px;
   }
   .btn {
-    display: none !important;
-}
+      display: none !important;
+  }
   .upper h1 {
-      font-size: 18px;
+      font-size: 13px;
   }
   .upper .address {
       font-size: 13px;
@@ -161,15 +174,12 @@ tr.no-border {
       font-size: 13px;
   }
   .table-responsive {
-      font-size: 12px;
-     width: 100%;
-     margin-right: 10px !important;
+      font-size: 13px;
+      width: 100%;
   }
-  .btn {
-    display: none;
-}
   .frsttable td, .frsttable input {
       padding: 2px;
+      font-size: 13px;
   }
   .header-row {
       height: 40px;
@@ -177,53 +187,42 @@ tr.no-border {
   .header-row label, .header-row strong, .header-row input {
       font-size: 13px;
   }
-  .second, .second input {
-      font-size: 12px;
+  .second input {
+      font-size: 13px;
   }
   .head {
-      font-size: 12px;
+      font-size: 13px;
   }
   .no-top-border input {
-      font-size: 12px;
+      font-size: 13px;
   }
   h5 {
-      font-size: 12px;
+      font-size: 13px;
       margin: 0;
   }
+  .bankdetail pre {
+      font-size: 13px;
+      line-height: 13px;
+  }
+  .bankdetail h4 {
+      font-size: 13px;
+  }
+  input {
+      font-size: 13px;
+  }
+  .date input {
+      width: 100px;
+  }
+  .words {
+      font-size: 13px;
+  }
+  @page {
+      margin: 0;
+  }
+  #placeofsupply{
+    width: 200px;
+  }
+}
 
-  .container-fluid {
-    width: 100% !important;
-    padding: 0 !important;
-    margin: 0 !important;
-}
-.main {
-    padding: 10px !important;
-}
-.table-responsive {
-    overflow: visible !important;
-}
-.table {
-    width: 100% !important;
-}
-@page {
-  margin: 0;
-}
-.bankdetail pre{
-  font-size: 13px;
-  line-height: 10px;
-}
-.bankdetail h4{
-  font-size: 12px;
-}
-input{
-  font-size: 12px;
-}
-.date input{
-  width: 100px;
-}
-.words{
-  font-size: 15px;
-}
-}
 
 
