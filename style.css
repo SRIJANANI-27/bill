@@ -141,12 +141,8 @@ tr.no-border {
 .center-cell {
   text-align: center !important;
 }
-/* .form-control {
-  text-align: center;
-} */
-.right{
-  text-align:end;
-}
+
+
 @media print {
   body {
       -webkit-print-color-adjust: exact;
@@ -165,6 +161,7 @@ tr.no-border {
       display: none !important;
   }
   .upper h1 {
+    margin-top: 10px;
       font-size: 13px;
   }
   .upper .address {
@@ -221,6 +218,9 @@ tr.no-border {
   }
   #placeofsupply{
     width: 200px;
+  }
+  .upper img{
+    width: 20px !important;
   }
 }
 

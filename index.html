@@ -18,14 +18,15 @@
 
     <div class="container-fluid">
         <div class="main">
-            <button type="button" onclick="printForm()" class="btn btn-outline-primary mt-2"
-                style="margin-left: 10px;">Print</button>
+           
 
-            <section class="upper">
-                <h1 style="color: darkblue;">KRK SILVERS</h1>
-                <p class="address">88-1, VASAGASALAI STREET, Salem-636 001. <br>
-                    Mobile: 97906 69432, 94874 10094</p>
-            </section>
+                <section class="upper" style="text-align: center; position: relative;">
+                    <img src="image2.png" alt="" style="width: 25px; position: absolute; top: 0; left: 50%; transform: translateX(-50%);"><br>
+                    <h1 style="color: darkblue;">KRK SILVERS</h1>
+                    <p class="address">88-1, VASAGASALAI STREET, Salem-636 001. <br>
+                        Mobile: 97906 69432, 94874 10094</p>
+                </section>
+                
 
             <section class="box">
                 <div class="frst">GSTIN :</div>
@@ -176,11 +177,11 @@
                         </td>
 
                         <td style="width: 66.67%;" colspan="2" class="aftertax">Total Amount After Tax :</td>
-                        <td class="valuetax right"></td>
+                        <td class="valuetax right m-5"></td>
                     </tr>
                     <tr>
                         <td style="width: 66.67%; " colspan="2" class="roundoff">Round Off :</td>
-                        <td class="roundoffval right"></td>
+                        <td class="roundoffval right value"></td>
                     </tr>
                     <tr>
                         <!-- <td style="width: 66.67%;" colspan="3"></td> -->
@@ -205,8 +206,12 @@
 
                 </table>
             </div>
+            <button type="button" onclick="printForm()" class="btn btn-outline-primary mb-2"
+            style="margin-left: 10px;">Print</button>
         </div>
+      
     </div>
+    
 </body>
 
 </html>
